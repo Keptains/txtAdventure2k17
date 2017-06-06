@@ -1,8 +1,13 @@
 package de.bsinfo.Spielfiguren;
 
-import de.bsinfo.Items.Item;
+import java.util.ArrayList;
+
+import de.bsinfo.Items.*;
 
 public abstract class Spieler extends GameObject {
+	
+	ArrayList<Item> items = new ArrayList<>();
+	ArrayList<Verbrauch> verbrauch = new ArrayList<>();
 
 	String name;
 	Item kopf;
@@ -18,6 +23,11 @@ public abstract class Spieler extends GameObject {
 		this.waffe = waffe;
 		this.koerper = koerper;
 		this.stiefel = stiefel;
+		verbrauch.add(new Heiltrank());
+		verbrauch.add(new Heiltrank());
+		verbrauch.add(new Heiltrank());
+		verbrauch.add(new Heiltrank());
+		verbrauch.add(new Heiltrank());
 	}
 
 	public String getName() {
