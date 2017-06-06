@@ -5,16 +5,25 @@ public abstract class GameObject implements Attack {
 	int atk;
 	int def;
 	int agi;
+	int fahAtk;
 	int hp;
 
-	public GameObject(int atk, int def, int agi, int hp) {
+	public GameObject(int atk, int def, int agi, int fahAtk, int hp) {
 		this.atk = atk;
 		this.def = def;
 		this.agi = agi;
+		this.fahAtk = fahAtk;
 		this.hp = hp;
 	}
 
-	
+	public int getFahAtk() {
+		return fahAtk;
+	}
+
+	public void setFahAtk(int fahAtk) {
+		this.fahAtk = fahAtk;
+	}
+
 	public int getAtk() {
 		return atk;
 	}
@@ -49,7 +58,7 @@ public abstract class GameObject implements Attack {
 		return hp;
 	}
 
-	
+	//AYYYY
 	public void setHp(int hp) {
 		this.hp = hp;
 	}

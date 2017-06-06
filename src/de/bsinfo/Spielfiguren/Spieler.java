@@ -11,7 +11,7 @@ public abstract class Spieler extends GameObject{
 	Item Stiefel;
 
 	public Spieler(int atk, int def, int agi, int hp) {
-		super(atk, def, agi, hp);
+		super(atk, def, agi, hp, hp);
 	}
 	
 	
