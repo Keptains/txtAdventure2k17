@@ -1,7 +1,7 @@
 package de.bsinfo.Spielfiguren;
 
 public abstract class GameObject implements Attack {
-
+//Test
 	int atk;
 	int def;
 	int agi;
