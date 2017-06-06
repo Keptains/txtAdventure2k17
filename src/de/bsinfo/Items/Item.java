@@ -9,7 +9,7 @@ public abstract class Item implements ItemFaehigkeit {
 	String beschreibung;
 
 	ItemTyp typ;
-	//test
+	
 	int atk;
 	int def;
 	int agi;
