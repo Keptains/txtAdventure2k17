@@ -2,24 +2,26 @@ package de.bsinfo.Items;
 
 import de.bsinfo.Spielfiguren.GameObject;
 
-public abstract class Item implements ItemFaehigkeit {
+public class Item implements ItemFaehigkeit {
 
 	boolean hatFaehigkeit;
 	String name;
 	String beschreibung;
 
 	ItemTyp typ;
-	
+
 	int atk;
 	int def;
 	int agi;
+	int fahAtk;
 	int hp;
 
-	public Item(int atk, int def, int agi, int hp, String name, String beschreibung, ItemTyp typ,
+	public Item(int atk, int def, int agi, int fahAtk, int hp, String name, String beschreibung, ItemTyp typ,
 			boolean hatFaehigkeit) {
 		this.atk = atk;
 		this.def = def;
 		this.agi = agi;
+		this.fahAtk = fahAtk;
 		this.hp = hp;
 		this.name = name;
 		this.beschreibung = beschreibung;
@@ -88,14 +90,15 @@ public abstract class Item implements ItemFaehigkeit {
 		this.hp = hp;
 	}
 
+	@Override
+	public void itemFaehigkeit(GameObject obj) {
+		
+	}
+
 }
 
 interface ItemFaehigkeit {
 
 	public void itemFaehigkeit(GameObject obj);
 
-}
-
-enum ItemTyp {
-	Kopf, Koerper, Stiefel, Waffe
 }

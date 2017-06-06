@@ -58,7 +58,7 @@ public abstract class GameObject implements Attack {
 		return hp;
 	}
 
-	//AYYYY
+	
 	public void setHp(int hp) {
 		this.hp = hp;
 	}
